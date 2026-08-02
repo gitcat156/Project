@@ -1,5 +1,4 @@
 import streamlit as st
-import random # 
 
 st.set_page_config(page_title="Portfolio", layout="wide")
 col1, col2, = st.columns([1, 2.5])
@@ -17,9 +16,16 @@ tab1, tab2, tab3, tab4 = st.tabs(["History", "Project", "Experience", "Social"])
 with tab1:
     st.write("Started coding in 2024")
 with tab2:
-    with st.container(border=True):
-        st.markdown("#### Pong Game")
-        st.link_button("Project Link", "https://github.com/")
+    col3, col4 = st.columns(2)
+    with col3:
+        with st.container(border=True):
+            st.markdown("#### Pong Game")
+            st.link_button("Project Link", "https://github.com/")
+    with col4:
+        with st.container(border=True):
+            st.markdown("#### Game")
+            st.link_button("Project Link", "https://github.com/")
+ 
 with tab3:
     st.title("Programming language")
     st.markdown("- Python")
