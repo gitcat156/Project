@@ -5,9 +5,11 @@ col1, col2, = st.columns([1, 2.5])
 
 with col1:
     st.title("Portfolio")
-
+    st.markdown("Hello World")
 with col2:
-    st.markdown("lorem si")
+    st.title("Description")
+    st.write("This is a portfolio website")
+    st.write("")
 
 st.divider()
 
