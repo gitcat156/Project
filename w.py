@@ -22,10 +22,13 @@ with tab2:
     with col3:
         with st.container(border=True):
             st.markdown("#### Pong Game")
+            st.write("Description: This is a pong game remake.")
             st.link_button("Project Link", "https://github.com/")
+            
     with col4:
         with st.container(border=True):
             st.markdown("#### Game")
+            st.write("Description: This is a game")
             st.link_button("Project Link", "https://github.com/")
  
 with tab3:
